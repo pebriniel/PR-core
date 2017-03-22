@@ -1,0 +1,30 @@
+{
+    "name" : "BS/CoreBundle",
+    "description" : "Core BS Bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "boussasd",
+        "email" : "boussad.sadadou@gmail.com"
+    }],
+    "keywords" : [
+        "Core Bundle BS app"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "BS\\CoreBundle" : ""
+        }
+    },
+    "target-dir" : "BS/CoreBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "some_version-dev"
+        }
+    }
+}
