@@ -19,7 +19,7 @@
             "BS\\CoreBundle" : ""
         }
     },
-    "target-dir" : "/",
+    "target-dir" : "BS/CoreBundle",
     "repositories" : [{
     }],
     "extra" : {
