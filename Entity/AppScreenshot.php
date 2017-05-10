@@ -31,6 +31,17 @@ class AppScreenshot{
 
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255, nullable = true, unique = false)
+     *
+    */
+    private $name;
+
+
+
+
+    /**
      * Get id
      *
      * @return integer
@@ -63,4 +74,31 @@ class AppScreenshot{
     {
         return $this->url;
     }
+
+
+    /**
+     * Set name
+     *
+     * @param string $url
+     *
+     * @return AppScreenshot
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+
 }

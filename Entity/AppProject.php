@@ -5,7 +5,7 @@ namespace BS\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Advert
+ * project
  *
  * @ORM\Table(name="project")
  * @ORM\Entity(repositoryClass="BS\CoreBundle\Repository\AdvertRepository")
@@ -68,7 +68,8 @@ class AppProject{
 
     /**
      * @ORM\ManyToMany(targetEntity="AppTechnology", cascade={"persist"})
-     * @ORM\JoinTable(name="oc_project_technology")
+     * @ORM\JoinTable(name="oc_project_technology")s
+     * @var Collection|AppTechnology[]
      */
     private $technology;
 

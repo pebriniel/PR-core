@@ -5,7 +5,7 @@ namespace BS\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Advert
+ * profil
  *
  * @ORM\Table(name="profil")
  * @ORM\Entity(repositoryClass="BS\CoreBundle\Repository\AdvertRepository")
@@ -24,10 +24,10 @@ class AppProfil{
     /**
      * @var string
      *
-     * @ORM\Column(name="key", type="string", length=150, nullable = true, unique = false)
+     * @ORM\Column(name="keyName", type="string", length=150, nullable = true, unique = false)
      *
     */
-    private $key;
+    private $keyname;
 
 
     /**
@@ -37,11 +37,6 @@ class AppProfil{
      *
     */
     private $value;
-
-
-
-
-
 
     /**
      * Get id
@@ -56,13 +51,13 @@ class AppProfil{
     /**
      * Set key
      *
-     * @param string $key
+     * @param string $keyname
      *
      * @return AppProfil
      */
-    public function setKey($key)
+    public function setKeyname($keyname)
     {
-        $this->key = $key;
+        $this->keyname = $keyname;
 
         return $this;
     }
@@ -72,9 +67,9 @@ class AppProfil{
      *
      * @return string
      */
-    public function getKey()
+    public function getKeyname()
     {
-        return $this->key;
+        return $this->keyname;
     }
 
     /**

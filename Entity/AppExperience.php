@@ -62,10 +62,10 @@ class AppExperience{
     /**
      * @var int
      *
-     * @ORM\Column(name="order", type="integer", length=4, nullable = true, unique = false)
+     * @ORM\Column(name="ordernumber", type="integer", length=4, nullable = true, unique = false)
      *
     */
-    private $order;
+    private $ordernumber;
 
     /**
      * @var string
@@ -137,27 +137,27 @@ class AppExperience{
     }
 
     /**
-     * Set order
+     * Set ordernumber
      *
-     * @param integer $order
+     * @param integer $ordernumber
      *
      * @return AppExperience
      */
-    public function setOrder($order)
+    public function setOrdernumber($ordernumber)
     {
-        $this->order = $order;
+        $this->ordernumber = $ordernumber;
 
         return $this;
     }
 
     /**
-     * Get order
+     * Get ordernumber
      *
      * @return integer
      */
-    public function getOrder()
+    public function getOrdernumber()
     {
-        return $this->order;
+        return $this->ordernumber;
     }
 
     /**

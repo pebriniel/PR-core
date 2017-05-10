@@ -10,4 +10,5 @@ namespace BS\CoreBundle\Repository;
  */
 class AdvertRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }

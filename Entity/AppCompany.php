@@ -5,7 +5,7 @@ namespace BS\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Advert
+ * company
  *
  * @ORM\Table(name="company")
  * @ORM\Entity(repositoryClass="BS\CoreBundle\Repository\AdvertRepository")

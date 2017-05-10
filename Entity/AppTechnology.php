@@ -5,7 +5,7 @@ namespace BS\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Advert
+ * technology
  *
  * @ORM\Table(name="technology")
  * @ORM\Entity(repositoryClass="BS\CoreBundle\Repository\AdvertRepository")
@@ -40,7 +40,7 @@ class AppTechnology{
     /**
      * @var int
      *
-     * @ORM\Column(name="category", type="integer", length=4, nullable = true, unique = false)
+     * @ORM\Column(name="category", type="integer", length=11, nullable = true, unique = false)
      *
     */
     private $category;
@@ -48,10 +48,10 @@ class AppTechnology{
     /**
      * @var int
      *
-     * @ORM\Column(name="order", type="integer", length=4, nullable = true, unique = false)
+     * @ORM\Column(name="ordernumber", type="integer", length=11, nullable = true, unique = false)
      *
     */
-    private $order;
+    private $ordernumber;
 
     /**
      * Get id
@@ -136,26 +136,26 @@ class AppTechnology{
     }
 
     /**
-     * Set order
+     * Set orderNumber
      *
-     * @param integer $order
+     * @param integer $orderNumber
      *
      * @return AppTechnology
      */
-    public function setOrder($order)
+    public function setOrdernumber($ordernumber)
     {
-        $this->order = $order;
+        $this->ordernumber = $ordernumber;
 
         return $this;
     }
 
     /**
-     * Get order
+     * Get orderNumber
      *
      * @return integer
      */
-    public function getOrder()
+    public function getOrdernumber()
     {
-        return $this->order;
+        return $this->ordernumber;
     }
 }
