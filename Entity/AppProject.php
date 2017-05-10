@@ -3,7 +3,7 @@
 namespace BS\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use BS\COreBundle\Entity\AppTechnology;
 /**
  * project
  *
