@@ -33,6 +33,15 @@ class AppProject{
     /**
      * @var string
      *
+     * @ORM\Column(name="site", type="string", length=255, nullable = true, unique = false)
+     *
+    */
+    private $site;
+
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="name", type="string", length=255, nullable = true, unique = false)
      *
     */
