@@ -210,7 +210,7 @@ class AppProject{
      *
      * @return AppProject
      */
-    public function addTechnology(\AppBundle\Entity\AppTechnology $technology)
+    public function addTechnology(\BS\CoreBundle\Entity\AppTechnology $technology)
     {
         $this->technology[] = $technology;
 
@@ -222,7 +222,7 @@ class AppProject{
      *
      * @param \AppBundle\Entity\AppTechnology $technology
      */
-    public function removeTechnology(\AppBundle\Entity\AppTechnology $technology)
+    public function removeTechnology(\BS\CoreBundle\Entity\AppTechnology $technology)
     {
         $this->technology->removeElement($technology);
     }
@@ -244,7 +244,7 @@ class AppProject{
      *
      * @return AppProject
      */
-    public function addTeam(\AppBundle\Entity\AppTeam $team)
+    public function addTeam(\BS\CoreBundle\Entity\AppTeam $team)
     {
         $this->team[] = $team;
 
@@ -256,7 +256,7 @@ class AppProject{
      *
      * @param \AppBundle\Entity\AppTeam $team
      */
-    public function removeTeam(\AppBundle\Entity\AppTeam $team)
+    public function removeTeam(\BS\CoreBundle\Entity\AppTeam $team)
     {
         $this->team->removeElement($team);
     }
