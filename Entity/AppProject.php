@@ -287,7 +287,7 @@ class AppProject{
      *
      * @return AppProject
      */
-    public function addScreenshot(\AppBundle\Entity\AppScreenshot $screenshot)
+    public function addScreenshot(\BS\CoreBundle\Entity\AppScreenshot $screenshot)
     {
         $this->screenshot[] = $screenshot;
 
@@ -299,7 +299,7 @@ class AppProject{
      *
      * @param \AppBundle\Entity\AppScreenshot $screenshot
      */
-    public function removeScreenshot(\AppBundle\Entity\AppScreenshot $screenshot)
+    public function removeScreenshot(\BS\CoreBundle\Entity\AppScreenshot $screenshot)
     {
         $this->screenshot->removeElement($screenshot);
     }
